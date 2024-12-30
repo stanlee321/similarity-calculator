@@ -1,0 +1,17 @@
+*.zip
+*.jpg
+*.png
+*.jpeg
+*.bmp
+*.gif
+*.tiff
+*.ico
+*.webp
+
+*.pth
+*.pt
+*.pkl
+*.joblib
+*.joblib
+*.joblib
+*.joblib
