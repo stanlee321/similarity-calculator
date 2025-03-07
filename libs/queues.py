@@ -3,7 +3,12 @@ import logging
 import numpy as np
 from kafka import KafkaProducer, KafkaConsumer
 
+import os
+from dotenv import load_dotenv
 
+load_dotenv()  
+
+SERVER_IP = os.getenv("IP_ADDRESS")
 class KafkaHandler:
     def __init__(self, bootstrap_servers, log_file='kafka_handler.log'):
         self.bootstrap_servers = bootstrap_servers
@@ -77,7 +82,7 @@ class KafkaHandler:
 if __name__ == "__main__":
     
     print("Startingg...")
-    kafka_address = '192.168.1.12:9093'
+    kafka_address = f'{SERVER_IP}:9093'
     
     kafka_handler = KafkaHandler(bootstrap_servers=[kafka_address])
     

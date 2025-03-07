@@ -1,11 +1,16 @@
 from libs.app import Application
 
+import os
+from dotenv import load_dotenv
 
-SERVER_IP = "192.168.1.26"
+load_dotenv()  
+
+SERVER_IP = os.getenv("IP_ADDRESS")
+
 API_BASE_URL = f"http://{SERVER_IP}:8003"
 
-MINIO_ACCESS_KEY = "BVBJYWOU8gaL9sytgpH0"
-MINIO_SECRET_KEY = "YWdP3s3rhZoI6RrjLpOkoP53mf5D56bz0S7YXSnT"
+MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY")
+MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY")
 MINIO_URL = f"{SERVER_IP}:9000"
 
 brokers = [f'{SERVER_IP}:9092']
