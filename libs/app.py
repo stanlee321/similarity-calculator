@@ -146,6 +146,10 @@ class Application:
             if downloaded_files:
                 # Download target image
                 target_image_path = os.path.join(temp_dir, target_image_name)
+                print("Downloading target image: ", target_image_path)
+                print("Remote path: ", remote_path)
+                print("Downloaded files: ", downloaded_files)
+                print("--------------------------------")
                 success, _, _ = self.download_file(remote_path, target_image_path)
                 if not success:
                     raise Exception("Failed to download target image")
