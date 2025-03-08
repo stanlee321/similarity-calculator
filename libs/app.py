@@ -165,7 +165,7 @@ class Application:
                 print("Downloading target image: ", target_image_path)
                 print("Remote path: ", remote_path)
                 # S3 public path
-                public_path = f"https://{self.server_ip}:9000/{remote_path}"
+                public_path = f"http://{self.server_ip}:9000/{remote_path}"
                 print("--------------------------------")
                 print("Target public path: ", public_path)
                 success, local_path = self.download_file_with_requests(public_path, target_image_path)
