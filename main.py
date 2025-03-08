@@ -15,7 +15,7 @@ MINIO_URL = f"{SERVER_IP}:9000"
 
 brokers = [f'{SERVER_IP}:9092']
 
-BUCKET_NAME = "my-bucket"
+BUCKET_NAME = "default"
 
 TOPIC_INPUT = "similarity-calculation"
 TOPIC_OUTPUT = "similarity-calculation-results"

@@ -149,6 +149,8 @@ class Application:
                 print("Downloading target image: ", target_image_path)
                 print("Remote path: ", remote_path)
                 print("--------------------------------")
+                target_image_path  = target_image_path.replace("default", "")
+                print("Target image path: ", target_image_path)
                 success, _, _ = self.download_file(remote_path, target_image_path)
                 if not success:
                     raise Exception("Failed to download target image")
