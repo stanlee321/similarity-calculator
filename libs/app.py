@@ -62,6 +62,22 @@ class Application:
         if path.startswith(f"{self.bucket_name}/"):
             path = path[len(self.bucket_name)+1:]
         return path
+    
+    def download_file_with_requests(self, url: str, local_path: str) -> tuple[bool, str]:
+        """Download a single file from Minio.
+        Returns: (success, local_path)
+        """
+        
+        try:
+            import requests
+            response = requests.get(url)
+            response.raise_for_status()
+            with open(local_path, 'wb') as f:
+                f.write(response.content)
+            return True, local_path
+        except Exception as e:
+            print(f"Error downloading {local_path}: {str(e)}")
+            return False, local_path
 
     def download_file(self, object_name: str, local_path: str) -> tuple[bool, str, str]:
         """Download a single file from Minio.
@@ -148,10 +164,11 @@ class Application:
                 target_image_path = os.path.join(temp_dir, target_image_name)
                 print("Downloading target image: ", target_image_path)
                 print("Remote path: ", remote_path)
+                # S3 public path
+                public_path = f"https://{self.server_ip}:9000/{remote_path}"
                 print("--------------------------------")
-                target_image_path  = target_image_path.replace("default", "")
-                print("Target image path: ", target_image_path)
-                success, _, _ = self.download_file(remote_path, target_image_path)
+                print("Target public path: ", public_path)
+                success, local_path = self.download_file_with_requests(public_path, target_image_path)
                 if not success:
                     raise Exception("Failed to download target image")
                 
@@ -159,7 +176,7 @@ class Application:
                 core = Core(image_paths=downloaded_files)
                 similar_images, similarity_scores = core.find_pairs(
                     threshold=self.threshold,
-                    target_image_path=target_image_path,
+                    target_image_path=local_path,
                     top_n=self.top_n,
                     return_json=False
                 )
