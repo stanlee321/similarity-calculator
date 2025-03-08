@@ -70,7 +70,7 @@ class Application:
         
         try:
             import requests
-            response = requests.get(url)
+            response = requests.get(url, verify=False)
             response.raise_for_status()
             with open(local_path, 'wb') as f:
                 f.write(response.content)
