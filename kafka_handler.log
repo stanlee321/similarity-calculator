@@ -1639,3 +1639,380 @@ TimeoutError: [Errno 60] Operation timed out
 2025-03-06 21:47:25,952 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
 2025-03-06 21:47:25,963 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
 2025-03-06 21:47:26,571 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:05:14,999 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:05:14,999 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:05:14,999 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:05:15,107 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:05:15,107 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:05:15,109 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:05:15,109 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:05:15,109 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:05:15,214 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:05:15,214 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:05:15,214 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:05:15,216 - kafka.cluster - INFO - Group coordinator for similarity-calculation-4cf7ec19-118b-40a4-8007-f7a6af058f2b is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:05:15,216 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-4cf7ec19-118b-40a4-8007-f7a6af058f2b
+2025-03-07 20:05:15,217 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:05:15,217 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-4cf7ec19-118b-40a4-8007-f7a6af058f2b
+2025-03-07 20:05:15,217 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:05:15,322 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:05:15,322 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:05:15,428 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-4cf7ec19-118b-40a4-8007-f7a6af058f2b
+2025-03-07 20:05:18,444 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:05:18,446 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:05:18,446 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:05:18,451 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-4cf7ec19-118b-40a4-8007-f7a6af058f2b with generation 1
+2025-03-07 20:05:18,452 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:05:18,452 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-4cf7ec19-118b-40a4-8007-f7a6af058f2b
+2025-03-07 20:05:49,288 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:05:49,289 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:05:49,290 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:05:49,548 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:06:52,258 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:06:52,259 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:06:52,259 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:06:52,367 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:06:52,368 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:06:52,369 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:06:52,369 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:06:52,369 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:06:52,476 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:06:52,476 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:06:52,476 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:06:52,479 - kafka.cluster - INFO - Group coordinator for similarity-calculation-000f61fb-a669-4507-b064-846dcd4aaba8 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:06:52,479 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-000f61fb-a669-4507-b064-846dcd4aaba8
+2025-03-07 20:06:52,479 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:06:52,480 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-000f61fb-a669-4507-b064-846dcd4aaba8
+2025-03-07 20:06:52,480 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:06:52,581 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:06:52,581 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:06:52,682 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-000f61fb-a669-4507-b064-846dcd4aaba8
+2025-03-07 20:06:55,696 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:06:55,701 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:06:55,702 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:06:55,708 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-000f61fb-a669-4507-b064-846dcd4aaba8 with generation 1
+2025-03-07 20:06:55,708 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:06:55,710 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-000f61fb-a669-4507-b064-846dcd4aaba8
+2025-03-07 20:07:18,768 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:07:18,769 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:07:18,770 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:07:19,022 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:11:50,758 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:11:50,758 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:11:50,759 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:11:50,867 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:11:50,867 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:11:50,868 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:11:50,868 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:11:50,869 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:11:50,974 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:11:50,974 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:11:50,975 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:11:50,978 - kafka.cluster - INFO - Group coordinator for similarity-calculation-1b0f72d0-eb3e-403b-af29-1294928de538 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:11:50,978 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-1b0f72d0-eb3e-403b-af29-1294928de538
+2025-03-07 20:11:50,978 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:11:50,978 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-1b0f72d0-eb3e-403b-af29-1294928de538
+2025-03-07 20:11:50,978 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:11:51,084 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:11:51,085 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:11:51,190 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-1b0f72d0-eb3e-403b-af29-1294928de538
+2025-03-07 20:11:54,210 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:11:54,212 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:11:54,213 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:11:54,216 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-1b0f72d0-eb3e-403b-af29-1294928de538 with generation 1
+2025-03-07 20:11:54,216 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:11:54,217 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-1b0f72d0-eb3e-403b-af29-1294928de538
+2025-03-07 20:12:18,133 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:12:18,134 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:12:18,135 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:12:18,378 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:18:55,389 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:18:55,389 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:18:55,389 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:18:55,495 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:18:55,495 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:18:55,497 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:18:55,497 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:18:55,497 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:18:55,606 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:18:55,606 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:18:55,607 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:18:55,610 - kafka.cluster - INFO - Group coordinator for similarity-calculation-61f77911-edf6-472e-a50e-0490308c82f6 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:18:55,610 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-61f77911-edf6-472e-a50e-0490308c82f6
+2025-03-07 20:18:55,610 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:18:55,610 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-61f77911-edf6-472e-a50e-0490308c82f6
+2025-03-07 20:18:55,611 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:18:55,716 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:18:55,717 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:18:55,822 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-61f77911-edf6-472e-a50e-0490308c82f6
+2025-03-07 20:18:58,834 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:18:58,839 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:18:58,840 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:18:58,844 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-61f77911-edf6-472e-a50e-0490308c82f6 with generation 1
+2025-03-07 20:18:58,845 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:18:58,846 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-61f77911-edf6-472e-a50e-0490308c82f6
+2025-03-07 20:22:06,753 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:22:06,754 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:22:06,755 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:22:06,914 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:22:10,982 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:22:10,982 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:22:10,982 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:22:11,095 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:22:11,095 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:22:11,097 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:22:11,097 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:22:11,097 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:22:11,207 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:22:11,207 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:22:11,208 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:22:11,212 - kafka.cluster - INFO - Group coordinator for similarity-calculation-8a658ad4-ac02-4606-936a-c66d6162309e is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:22:11,212 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-8a658ad4-ac02-4606-936a-c66d6162309e
+2025-03-07 20:22:11,212 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:22:11,213 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-8a658ad4-ac02-4606-936a-c66d6162309e
+2025-03-07 20:22:11,214 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:22:11,319 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:22:11,320 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:22:11,421 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-8a658ad4-ac02-4606-936a-c66d6162309e
+2025-03-07 20:22:14,430 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:22:14,432 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:22:14,433 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:22:14,454 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-8a658ad4-ac02-4606-936a-c66d6162309e with generation 1
+2025-03-07 20:22:14,454 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:22:14,454 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-8a658ad4-ac02-4606-936a-c66d6162309e
+2025-03-07 20:25:12,248 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:25:12,252 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:25:12,253 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:25:12,456 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:25:24,999 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:25:25,000 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:25:25,000 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:25:25,108 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:25:25,108 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:25:25,110 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:25:25,110 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:25:25,110 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:25:25,218 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:25:25,218 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:25:25,218 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:25:25,220 - kafka.cluster - INFO - Group coordinator for similarity-calculation-cb9bc050-6f58-47ca-8507-6ee9ab521491 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:25:25,220 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-cb9bc050-6f58-47ca-8507-6ee9ab521491
+2025-03-07 20:25:25,221 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:25:25,221 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-cb9bc050-6f58-47ca-8507-6ee9ab521491
+2025-03-07 20:25:25,221 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:25:25,326 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:25:25,327 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:25:25,433 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-cb9bc050-6f58-47ca-8507-6ee9ab521491
+2025-03-07 20:25:28,444 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:25:28,445 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:25:28,445 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:25:28,447 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-cb9bc050-6f58-47ca-8507-6ee9ab521491 with generation 1
+2025-03-07 20:25:28,447 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:25:28,447 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-cb9bc050-6f58-47ca-8507-6ee9ab521491
+2025-03-07 20:25:54,694 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:25:54,694 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:25:54,695 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:25:54,935 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:28:16,663 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:28:16,663 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:28:16,663 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:28:16,773 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:28:16,773 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:28:16,774 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:28:16,775 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:28:16,775 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:28:16,883 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:28:16,884 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:28:16,884 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:28:16,886 - kafka.cluster - INFO - Group coordinator for similarity-calculation-1e51810e-f781-4857-b41f-6bee13ba8e64 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:28:16,887 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-1e51810e-f781-4857-b41f-6bee13ba8e64
+2025-03-07 20:28:16,887 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:28:16,887 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-1e51810e-f781-4857-b41f-6bee13ba8e64
+2025-03-07 20:28:16,887 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:28:16,988 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:28:16,988 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:28:17,093 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-1e51810e-f781-4857-b41f-6bee13ba8e64
+2025-03-07 20:28:20,113 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:28:20,116 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:28:20,117 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:28:20,120 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-1e51810e-f781-4857-b41f-6bee13ba8e64 with generation 1
+2025-03-07 20:28:20,121 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:28:20,122 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-1e51810e-f781-4857-b41f-6bee13ba8e64
+2025-03-07 20:28:42,168 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:28:42,168 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:28:42,168 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:28:42,411 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:29:52,729 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:29:52,730 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:29:52,730 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:29:52,838 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:29:52,838 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:29:52,840 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:29:52,840 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:29:52,840 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:29:52,947 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:29:52,947 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:29:52,947 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:29:52,951 - kafka.cluster - INFO - Group coordinator for similarity-calculation-8cd36fc6-9fb7-447b-ae53-fe2b4490ebea is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:29:52,951 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-8cd36fc6-9fb7-447b-ae53-fe2b4490ebea
+2025-03-07 20:29:52,951 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:29:52,951 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-8cd36fc6-9fb7-447b-ae53-fe2b4490ebea
+2025-03-07 20:29:52,952 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:29:53,052 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:29:53,053 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:29:53,159 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-8cd36fc6-9fb7-447b-ae53-fe2b4490ebea
+2025-03-07 20:29:56,175 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:29:56,179 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:29:56,179 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:29:56,185 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-8cd36fc6-9fb7-447b-ae53-fe2b4490ebea with generation 1
+2025-03-07 20:29:56,185 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:29:56,186 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-8cd36fc6-9fb7-447b-ae53-fe2b4490ebea
+2025-03-07 20:30:20,340 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-07 20:30:20,340 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-07 20:30:20,340 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:30:20,586 - kafka.coordinator - INFO - Stopping heartbeat thread
+2025-03-07 20:31:48,458 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:31:48,458 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:31:48,458 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:31:48,564 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:31:48,564 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:31:48,566 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:31:48,566 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-07 20:31:48,566 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:31:48,674 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-07 20:31:48,675 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-07 20:31:48,675 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-07 20:31:48,679 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:31:48,679 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:31:48,679 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-07 20:31:48,679 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:31:48,679 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:31:48,785 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:31:48,785 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:31:48,890 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:31:51,902 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:31:51,904 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:31:51,904 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:31:51,906 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 with generation 1
+2025-03-07 20:31:51,906 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:31:51,907 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:32:11,955 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-07 20:32:11,955 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-07 20:36:48,621 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:36:48,622 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:36:48,622 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:36:54,920 - kafka.coordinator - WARNING - Heartbeat poll expired, leaving group
+2025-03-07 20:36:54,921 - kafka.coordinator - INFO - Leaving consumer group (similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097).
+2025-03-07 20:37:12,775 - kafka.coordinator.consumer - ERROR - Offset commit failed: This is likely to cause duplicate message delivery
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/vision_p11/lib/python3.11/site-packages/kafka/coordinator/consumer.py", line 528, in _maybe_auto_commit_offsets_sync
+    self.commit_offsets_sync(self._subscription.all_consumed_offsets())
+  File "/opt/anaconda3/envs/vision_p11/lib/python3.11/site-packages/kafka/coordinator/consumer.py", line 521, in commit_offsets_sync
+    raise future.exception # pylint: disable-msg=raising-bad-type
+    ^^^^^^^^^^^^^^^^^^^^^^
+kafka.errors.CommitFailedError: CommitFailedError: Commit cannot be completed since the group has already
+            rebalanced and assigned the partitions to another member.
+            This means that the time between subsequent calls to poll()
+            was longer than the configured max_poll_interval_ms, which
+            typically implies that the poll loop is spending too much
+            time message processing. You can address this either by
+            increasing the rebalance timeout with max_poll_interval_ms,
+            or by reducing the maximum size of batches returned in poll()
+            with max_poll_records.
+            
+2025-03-07 20:37:12,776 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:37:12,776 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:37:15,788 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-07 20:37:15,793 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 with generation 3
+2025-03-07 20:37:15,794 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-07 20:37:15,794 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:54:46,974 - kafka.client - INFO - Closing idle connection 0, last active 1078344 ms ago
+2025-03-07 20:54:46,986 - kafka.client - INFO - Closing idle connection coordinator-0, last active 946144 ms ago
+2025-03-07 20:54:47,099 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:54:47,098 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 20:54:47,100 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:54:47,100 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 20:54:47,101 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 20:54:47,101 - kafka.coordinator.consumer - WARNING - Auto offset commit failed for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: NodeNotReadyError: coordinator-0
+2025-03-07 20:54:47,119 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 20:54:47,128 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 20:54:47,128 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 20:54:47,152 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 20:54:47,152 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 21:10:27,966 - kafka.client - WARNING - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]> timed out after 305000 ms. Closing connection.
+2025-03-07 21:10:27,967 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. [Error 7] RequestTimedOutError: Request timed out after 305000 ms
+2025-03-07 21:10:27,967 - kafka.consumer.fetcher - ERROR - Fetch to node 0 failed: [Error 7] RequestTimedOutError: Request timed out after 305000 ms
+2025-03-07 21:10:27,967 - kafka.client - INFO - Closing idle connection coordinator-0, last active 937833 ms ago
+2025-03-07 21:10:27,967 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 21:10:27,970 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 21:10:27,974 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 21:10:27,981 - kafka.client - INFO - Closing idle connection 0, last active 940826 ms ago
+2025-03-07 21:10:27,981 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 21:10:28,104 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 21:10:28,104 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 21:10:28,104 - kafka.coordinator.consumer - WARNING - Auto offset commit failed for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: NodeNotReadyError: coordinator-0
+2025-03-07 21:10:28,104 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 21:10:28,104 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 21:10:28,105 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 21:10:28,105 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 21:10:28,109 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 21:10:28,116 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 21:15:45,387 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 21:15:45,387 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 21:15:45,389 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 21:15:45,390 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 21:18:01,328 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 21:18:01,328 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 21:18:01,444 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 21:18:01,444 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 21:20:58,821 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 21:20:58,822 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 21:20:58,823 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 21:20:58,823 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 21:30:27,730 - kafka.client - INFO - Closing idle connection 0, last active 569067 ms ago
+2025-03-07 21:30:27,730 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-07 21:30:27,770 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 21:30:27,770 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 21:30:27,771 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 21:30:27,771 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-07 21:30:27,784 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-07 21:30:27,784 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-07 21:39:05,282 - kafka.coordinator - WARNING - Heartbeat session expired, marking coordinator dead
+2025-03-07 21:39:05,282 - kafka.coordinator - WARNING - Marking the coordinator dead (node coordinator-0) for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097: Heartbeat session expired.
+2025-03-07 21:39:05,283 - kafka.cluster - INFO - Group coordinator for similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-07 21:39:05,283 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-054284b0-fdc5-4cef-aac3-62104614e097
+2025-03-09 18:11:57,023 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-09 18:11:57,023 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-09 18:11:57,023 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-09 18:11:57,133 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-09 18:11:57,133 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-09 18:11:57,135 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-09 18:11:57,135 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-03-09 18:11:57,135 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-09 18:11:57,244 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-03-09 18:11:57,244 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-03-09 18:11:57,245 - kafka.consumer.subscription_state - INFO - Updating subscribed topics to: ('similarity-calculation',)
+2025-03-09 18:11:57,247 - kafka.cluster - INFO - Group coordinator for similarity-calculation-b11684d9-4de3-45d0-bf5d-40bc9ad1b3e4 is BrokerMetadata(nodeId='coordinator-0', host='192.168.1.10', port=9092, rack=None)
+2025-03-09 18:11:57,247 - kafka.coordinator - INFO - Discovered coordinator coordinator-0 for group similarity-calculation-b11684d9-4de3-45d0-bf5d-40bc9ad1b3e4
+2025-03-09 18:11:57,247 - kafka.coordinator - INFO - Starting new heartbeat thread
+2025-03-09 18:11:57,247 - kafka.coordinator.consumer - INFO - Revoking previously assigned partitions set() for group similarity-calculation-b11684d9-4de3-45d0-bf5d-40bc9ad1b3e4
+2025-03-09 18:11:57,247 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-09 18:11:57,353 - kafka.conn - INFO - <BrokerConnection node_id=coordinator-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-09 18:11:57,353 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-09 18:11:57,455 - kafka.coordinator - INFO - (Re-)joining group similarity-calculation-b11684d9-4de3-45d0-bf5d-40bc9ad1b3e4
+2025-03-09 18:11:57,455 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-09 18:11:57,456 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-09 18:12:00,547 - kafka.coordinator - INFO - Elected group leader -- performing partition assignments using range
+2025-03-09 18:12:00,550 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-09 18:12:00,550 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-09 18:12:00,551 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-09 18:12:00,563 - kafka.coordinator - INFO - Successfully joined group similarity-calculation-b11684d9-4de3-45d0-bf5d-40bc9ad1b3e4 with generation 1
+2025-03-09 18:12:00,563 - kafka.consumer.subscription_state - INFO - Updated partition assignment: [TopicPartition(topic='similarity-calculation', partition=0)]
+2025-03-09 18:12:00,564 - kafka.coordinator.consumer - INFO - Setting newly assigned partitions {TopicPartition(topic='similarity-calculation', partition=0)} for group similarity-calculation-b11684d9-4de3-45d0-bf5d-40bc9ad1b3e4
+2025-03-09 18:16:57,191 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: connecting to 192.168.1.10:9092 [('192.168.1.10', 9092) IPv4]
+2025-03-09 18:16:57,193 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connecting> [IPv4 ('192.168.1.10', 9092)]>: Connection complete.
+2025-03-09 18:16:57,193 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-09 19:22:19,487 - kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+2025-03-09 19:22:19,495 - kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-09 19:22:19,502 - kafka.conn - INFO - <BrokerConnection node_id=0 host=192.168.1.10:9092 <connected> [IPv4 ('192.168.1.10', 9092)]>: Closing connection. 
+2025-03-09 19:22:19,776 - kafka.coordinator - INFO - Stopping heartbeat thread
