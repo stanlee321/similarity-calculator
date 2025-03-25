@@ -7,6 +7,11 @@ load_dotenv()
 
 SERVER_IP = os.getenv("IP_ADDRESS")
 
+BACKEND_ADDRESS = SERVER_IP+":3001"
+
+BACKEND_EMAIL = os.getenv("BACKEND_EMAIL", "admin@example.com")
+BACKEND_PASSWORD = os.getenv("BACKEND_PASSWORD", "Adminpassword1@")
+
 API_BASE_URL = f"http://{SERVER_IP}:8003"
 
 MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY")
@@ -34,6 +39,9 @@ def main():
         topic_output=TOPIC_OUTPUT,
         bucket_name=BUCKET_NAME,
         croped_image_prefix=CROPPED_IMAGE_PREFIX,
+        backend_address=BACKEND_ADDRESS,
+        email=BACKEND_EMAIL,
+        password=BACKEND_PASSWORD,
         threshold=0.5,
         top_n=10,
         max_workers=4

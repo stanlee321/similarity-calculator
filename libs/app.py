@@ -1,18 +1,15 @@
 import os
 import uuid
 import json
-import tempfile
 import datetime
 from urllib.parse import unquote, urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from functools import partial
-import threading
 
 from libs.core import Core, display_similarity_results
 from libs.queues import KafkaHandler
 from typing import List
 from minio import Minio
-
+from libs.api import UpdateStatus
 
 class Application:
     
@@ -28,7 +25,10 @@ class Application:
                  croped_image_prefix: str,
                  threshold: float = 0.5,
                  top_n: int = 10,
-                 max_workers: int = 4
+                 max_workers: int = 4,
+                 backend_address: str = None,
+                 email: str = None,
+                 password: str = None
                  ) -> None:
          
         self.kafka_handler = KafkaHandler(bootstrap_servers=brokers)
@@ -46,6 +46,8 @@ class Application:
         self.threshold = threshold
         self.top_n = top_n
         self.max_workers = max_workers
+        self.backend_address = backend_address
+        self.updater = UpdateStatus(backend_address, email, password)
         
         if not os.path.exists(self.working_dir):
             os.makedirs(self.working_dir)
@@ -111,8 +113,13 @@ class Application:
 
     def process_message(self, message):
         _message_input = message.value
+        
+        # Consume values
         remote_url: str = _message_input['target_image_path']
         video_id: str = _message_input['video_id']
+        job_id: str = _message_input['job_id']
+        
+        self.updater.run(video_id, "Processing")
         
         remote_path = self.extract_object_path(remote_url)
         target_image_name = os.path.basename(remote_path)
@@ -126,14 +133,14 @@ class Application:
         downloaded_files = []
         
         try:
-            croped_images_prefix = f"{video_id}/images/{self.croped_image_prefix}/"
-            print(f"Looking for images in: {croped_images_prefix}")
+            croped_remote_path_images_prefix = f"{video_id}/{job_id}/images/{self.croped_image_prefix}/"
+            print(f"Looking for images in: {croped_remote_path_images_prefix}")
             
             # Get list of all objects to download
             objects_to_download = [
                 obj for obj in self.client_minio.list_objects(
                     self.bucket_name,
-                    prefix=croped_images_prefix,
+                    prefix=croped_remote_path_images_prefix,
                     recursive=True
                 ) if obj.object_name.endswith('.jpg')
             ]
@@ -270,11 +277,13 @@ class Application:
                     json.dump(results_json, f, indent=2)
                 
                 success, _, url = self.upload_file(json_object_name, json_local_path)
-                if success:
-                    results_json["results_json_url"] = url
                 
-                
-                #
+                # TODO: NOT USED YET
+                # if success:
+                #     results_json["results_json_url"] = url
+                #     self.updater.run(video_id, "Finished")
+                # else:
+                #     self.updater.run(video_id, "Failed")
         finally:
             # Cleanup
             if os.path.exists(temp_dir):
