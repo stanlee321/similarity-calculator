@@ -189,7 +189,7 @@ class Application:
                 )
                 
                 # Prepare results for parallel upload
-                similarity_base = f"{video_id}/similarity/{target_image_name}"
+                similarity_base = f"{video_id}/{job_id}/similarity/{target_image_name}"
                 
                 # Generate visualization
                 plot_filename = f"visualization_{target_image_name.replace('.jpg', '.png')}"
