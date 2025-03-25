@@ -1,9 +1,7 @@
 import requests
-from pydantic import BaseModel
-from enum import Enum
 
 
-class UpdateStatus(BaseModel):
+class UpdateStatus():
     def __init__(self, base_url, email, password, ):
         self.email = email
         self.password = password
