@@ -7,7 +7,7 @@ load_dotenv()
 
 SERVER_IP = os.getenv("IP_ADDRESS")
 
-BACKEND_ADDRESS = SERVER_IP+":3001"
+BACKEND_ADDRESS = "http://"+SERVER_IP+":3001"
 
 BACKEND_EMAIL = os.getenv("BACKEND_EMAIL", "admin@example.com")
 BACKEND_PASSWORD = os.getenv("BACKEND_PASSWORD", "Adminpassword1@")
