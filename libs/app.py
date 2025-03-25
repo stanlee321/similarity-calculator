@@ -119,7 +119,7 @@ class Application:
         video_id: str = _message_input['video_id']
         job_id: str = _message_input['job_id']
         
-        self.updater.run(video_id, "Processing")
+        # self.updater.run(video_id, "Processing")
         
         remote_path = self.extract_object_path(remote_url)
         target_image_name = os.path.basename(remote_path)
